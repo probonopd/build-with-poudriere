@@ -36,7 +36,7 @@ poudriere jail -c -j jail -v `uname -r`
 poudriere ports -c -f none -m null -M /usr/ports
 
 set +e
-poudriere testport -b latest -j jail ${PORT}
+poudriere testport -b latest -S -j jail ${PORT}
 RESULT=$?
 if [ ${RESULT} -eq 0 ]; then
 	exit 0
