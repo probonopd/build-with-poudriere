@@ -3,7 +3,7 @@ env:
   ARCH: amd64
 
 task:
-  timeout_in: 480m
+  timeout_in: 240m # There is a hard limit of 2 hours for community tasks
   compute_engine_instance:
     cpu: 8
     memory: 24g
