@@ -20,4 +20,5 @@ task:
     - pkg install -y poudriere-devel git-tiny synth
   script:
     # sh -x ./poudriere.sh
-    - sh -x ./synth.sh
+    # sh -x ./synth.sh
+    - sh -x ./port.sh
