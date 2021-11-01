@@ -28,8 +28,8 @@ mkdir /usr/ports/distfiles
 df -h
 
 set +e
-make build-depends-list | cut -c 12- | xargs pkg install -y # Install all dependencies from packages
 cd /usr/ports/${PORT}
+make build-depends-list | cut -c 12- | xargs pkg install -y # Install all dependencies from packages
 MAKE_JOBS_UNSAFE=yes make -j8
 RESULT=$?
 if [ ${RESULT} -eq 0 ]; then
