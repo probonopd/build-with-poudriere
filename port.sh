@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PORT=www/chromium
+PORT=www/firefox
 
 PORTSDIR=/usr/ports
 
